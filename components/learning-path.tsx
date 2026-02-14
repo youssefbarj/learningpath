@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, LaptopMinimal, Video, Building, Trophy } from "lucide-react"
+import { Check, HelpCircle, FileText, Building, Trophy } from "lucide-react"
 import { useState, useEffect } from "react"
 
 export default function LearningPath() {
@@ -50,7 +50,7 @@ function DesktopView() {
             className="font-medium text-[32px] text-white mb-[10px]"
             style={{ fontFamily: "Outfit, sans-serif", textShadow: "0 0 10px rgba(255, 255, 255, 0.2)" }}
           >
-            Votre parcours d'apprentissage
+            Your Learning Path
           </h2>
         </div>
 
@@ -99,7 +99,7 @@ function DesktopView() {
               className="absolute -top-[15px] -right-[15px] bg-white text-[10px] font-bold px-2 py-1 rounded-[10px] shadow-md animate-bounce"
               style={{ color: "#000435" }}
             >
-              VALIDÉ
+              VALIDATED
             </div>
           </div>
           <div className="absolute top-[85px] w-[220px] text-center">
@@ -107,89 +107,75 @@ function DesktopView() {
               className="font-bold text-[19px] text-white mb-2"
               style={{ fontFamily: "Outfit, sans-serif", textShadow: "0 2px 4px #000000" }}
             >
-              Théorie
+              Theory
             </h3>
             <p
               className="text-[15px] text-white font-semibold leading-[1.4] px-[5px]"
               style={{ textShadow: "0 2px 5px #000000" }}
             >
-              Bases fondamentales acquises avec succès.
+              Fundamental bases successfully acquired.
             </p>
           </div>
         </div>
 
-        {/* Node 2: QCM - Done */}
+        {/* Node 2: Online Quiz - Pending */}
         <div
           className="absolute z-[2] flex flex-col items-center justify-center cursor-default"
           style={{ left: "35%", top: "35%", transform: "translate(-50%, -50%)" }}
         >
           <div
-            className="relative w-[70px] h-[70px] rounded-full flex items-center justify-center text-[28px] transition-all duration-300 hover:scale-110"
+            className="w-[70px] h-[70px] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(207,159,255,0.5)]"
             style={{
-              background: "#CF9FFF",
-              border: "3px solid #fff",
-              color: "#000435",
-              boxShadow: "0 0 30px rgba(207, 159, 255, 0.6)",
+              background: "#000435",
+              border: "3px solid #CF9FFF",
+              boxShadow: "0 0 20px rgba(207, 159, 255, 0.2), inset 0 0 10px rgba(207, 159, 255, 0.1)",
             }}
           >
-            <Check size={28} strokeWidth={2.5} />
-            <div
-              className="absolute -top-[15px] -right-[15px] bg-white text-[10px] font-bold px-2 py-1 rounded-[10px] shadow-md animate-bounce"
-              style={{ color: "#000435" }}
-            >
-              VALIDÉ
-            </div>
+            <HelpCircle size={28} strokeWidth={2} />
           </div>
           <div className="absolute top-[85px] w-[220px] text-center">
             <h3
               className="font-bold text-[19px] text-white mb-2"
               style={{ fontFamily: "Outfit, sans-serif", textShadow: "0 2px 4px #000000" }}
             >
-              QCM en Ligne
+              Online Quiz
             </h3>
             <p
               className="text-[15px] text-white font-semibold leading-[1.4] px-[5px]"
               style={{ textShadow: "0 2px 5px #000000" }}
             >
-              Testez vos connaissances sur la plateforme.
+              Test your knowledge on the platform.
             </p>
           </div>
         </div>
 
-        {/* Node 3: Devoir - Done */}
+        {/* Node 3: Assignment Validation - Pending */}
         <div
           className="absolute z-[2] flex flex-col items-center justify-center cursor-default"
           style={{ left: "55%", top: "65%", transform: "translate(-50%, -50%)" }}
         >
           <div
-            className="relative w-[70px] h-[70px] rounded-full flex items-center justify-center text-[28px] transition-all duration-300 hover:scale-110"
+            className="w-[70px] h-[70px] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(207,159,255,0.5)]"
             style={{
-              background: "#CF9FFF",
-              border: "3px solid #fff",
-              color: "#000435",
-              boxShadow: "0 0 30px rgba(207, 159, 255, 0.6)",
+              background: "#000435",
+              border: "3px solid #CF9FFF",
+              boxShadow: "0 0 20px rgba(207, 159, 255, 0.2), inset 0 0 10px rgba(207, 159, 255, 0.1)",
             }}
           >
-            <Check size={28} strokeWidth={2.5} />
-            <div
-              className="absolute -top-[15px] -right-[15px] bg-white text-[10px] font-bold px-2 py-1 rounded-[10px] shadow-md animate-bounce"
-              style={{ color: "#000435" }}
-            >
-              VALIDÉ
-            </div>
+            <FileText size={28} strokeWidth={2} />
           </div>
           <div className="absolute top-[85px] w-[220px] text-center">
             <h3
               className="font-bold text-[19px] text-white mb-2"
               style={{ fontFamily: "Outfit, sans-serif", textShadow: "0 2px 4px #000000" }}
             >
-              Validation du devoir
+              Assignment Validation
             </h3>
             <p
               className="text-[15px] text-white font-semibold leading-[1.4] px-[5px]"
               style={{ textShadow: "0 2px 5px #000000" }}
             >
-              Soumettez votre pratique pour analyse.
+              Submit your practice for analysis.
             </p>
           </div>
         </div>
@@ -214,13 +200,13 @@ function DesktopView() {
               className="font-bold text-[19px] text-white mb-2"
               style={{ fontFamily: "Outfit, sans-serif", textShadow: "0 2px 4px #000000" }}
             >
-              Stage Pratique
+              Internship
             </h3>
             <p
               className="text-[15px] text-white font-semibold leading-[1.4] px-[5px]"
               style={{ textShadow: "0 2px 5px #000000" }}
             >
-              Immersion en institut partenaire.
+              Immersion in a partner institute.
             </p>
           </div>
         </div>
@@ -251,7 +237,7 @@ function DesktopView() {
               className="text-[15px] text-white font-semibold leading-[1.4] px-[5px]"
               style={{ textShadow: "0 2px 5px #000000" }}
             >
-              Devenez un expert E-lumy certifié.
+              Become a certified E-lumy expert.
             </p>
           </div>
         </div>
@@ -269,36 +255,39 @@ function DesktopView() {
 function MobileView() {
   const nodes = [
     {
-      title: "Théorie",
-      description: "Bases fondamentales acquises avec succès.",
+      title: "Theory",
+      description: "Fundamental bases successfully acquired.",
       icon: Check,
+      emoji: null,
       status: "done",
-      badge: "VALIDÉ"
+      badge: "VALIDATED"
     },
     {
-      title: "QCM en Ligne",
-      description: "Testez vos connaissances sur la plateforme.",
-      icon: Check,
-      status: "done",
-      badge: "VALIDÉ"
+      title: "Online Quiz",
+      description: "Test your knowledge on the platform.",
+      icon: HelpCircle,
+      emoji: null,
+      status: "pending"
     },
     {
-      title: "Validation du devoir",
-      description: "Soumettez votre pratique pour analyse.",
-      icon: Check,
-      status: "done",
-      badge: "VALIDÉ"
+      title: "Assignment Validation",
+      description: "Submit your practice for analysis.",
+      icon: FileText,
+      emoji: null,
+      status: "pending"
     },
     {
-      title: "Stage Pratique",
-      description: "Immersion en institut partenaire.",
+      title: "Internship",
+      description: "Immersion in a partner institute.",
       icon: Building,
+      emoji: null,
       status: "current"
     },
     {
       title: "CERTIFICATION",
-      description: "Devenez un expert E-lumy certifié.",
+      description: "Become a certified E-lumy expert.",
       icon: Trophy,
+      emoji: null,
       status: "final"
     }
   ]
@@ -309,7 +298,7 @@ function MobileView() {
       <div className="sticky top-0 z-20 px-4 py-4" style={{ backgroundColor: "rgba(0, 4, 53, 0.95)", backdropFilter: "blur(10px)" }}>
         <div className="flex items-center justify-between mb-2">
           <h1 className="text-xl font-bold text-white" style={{ fontFamily: "Outfit, sans-serif" }}>
-            Votre parcours d'apprentissage
+            Your Learning Path
           </h1>
           <img
             src="/images/elumy-logo.png"
@@ -357,15 +346,19 @@ function MobileView() {
                                    "none",
                     }}
                   >
-                    <Icon
-                      size={24}
-                      style={{
-                        color: node.status === "done" ? "#000435" :
-                               node.status === "final" ? "#CF9FFF" :
-                               node.status === "current" ? "#fff" :
-                               "rgba(255, 255, 255, 0.3)"
-                      }}
-                    />
+                    {node.icon && typeof node.icon === 'function' ? (
+                      <node.icon
+                        size={24}
+                        style={{
+                          color: node.status === "done" ? "#000435" :
+                                 node.status === "final" ? "#CF9FFF" :
+                                 node.status === "current" ? "#fff" :
+                                 "rgba(255, 255, 255, 0.3)"
+                        }}
+                      />
+                    ) : (
+                      <span className="text-[24px]">{node.emoji}</span>
+                    )}
                   </div>
 
                   {/* Badge */}
@@ -399,7 +392,7 @@ function MobileView() {
                     <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold"
                          style={{ backgroundColor: "rgba(207, 159, 255, 0.2)", color: "#CF9FFF" }}>
                       <div className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
-                      En cours
+                      In Progress
                     </div>
                   )}
                 </div>
