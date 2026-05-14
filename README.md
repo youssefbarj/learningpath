@@ -1,18 +1,22 @@
-# Learning Path — Shared Final Slide (EN)
+# Lash Extensions — Slide 18
 
-**Course:** Lip Blush (EN) · Lash Extensions (EN) · HydraFacial Treatment (EN) · MICRONEEDLING (EN) · Master Relaxing Massage  
-**Slide:** Final slide (shared)  
-**Live URL:** https://learningpath.edtechiecorp.com  
-**Stack:** Next.js · Tailwind CSS · TypeScript · GitHub Pages  
+**Course:** Lash Extensions
+**Slide:** 18
+**Live URL:** https://learningpath-psi.edtechiecorp.com
+**Stack:** Next.js · Tailwind CSS · TypeScript · GitHub Pages
 
-## What this slide does
-
-Shared course completion slide used at the end of multiple English-language courses. Displays the learner's completed learning path and surfaces the next available courses in the EdTechie English curriculum. This slide serves as a retention and upsell mechanism — keeping learners engaged after completing one certification by showing them a clear path to the next one.
+> Also used as the final learning path slide in multiple other courses.
 
 ## Screenshot
 
-![learningpath](./screenshot.png)
+![learningpath](https://github.com/youssefbarj/learningpath/raw/main/screenshot.png)
+
+## What this slide does
+
+This is an interactive slide embedded as an iframe inside Coassemble. See the screenshot above for a visual preview of the content.
 
 ## Usage
 
-This slide is embedded as an iframe inside Coassemble at the live URL above. DNS is managed via Cloudflare (`edtechiecorp.com`). To update the slide, push to the `main` branch — GitHub Actions will rebuild and redeploy automatically.
+This slide is served via GitHub Pages at the live URL above. DNS is managed via Cloudflare (`edtechiecorp.com`). To update the slide, push to the `main` branch — GitHub Actions will rebuild and redeploy automatically.
+
+> **For E-Lumy's tech team:** After migrating this repo to your own GitHub account, re-enable GitHub Pages in Settings → Pages → Source: GitHub Actions. Then update the embed URL in Coassemble to your new deployment URL.
